@@ -11,7 +11,6 @@ include("connection.php");
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       
-      
       $count = mysqli_num_rows($result);
       
       // If result matched $un and $ps, table row must be 1 row
@@ -37,8 +36,8 @@ include("connection.php");
 	<div id="main">
 		<h1>SIMPLE LOGIN</h1>
 		<form method="POST">
-			Username<input type="text" name="Username" class="text" autocomplete="off" required>
-			Password<input type="Password" name="Password" class="text" required>
-			<input type="Submit" name="Submit" id="Sub">
+			<input type="text" name="Username" placeholder="username" required>
+			<input type="Password" name="Password" placeholder="password" required>
+			<input type="Submit" >
 </body>
 </html>
