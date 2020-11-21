@@ -1,5 +1,4 @@
 <?php
-
 $connection = mysqli_connect("localhost", "root", "");
 
 $db = mysqli_select_db( $connection,"login_form");
@@ -14,4 +13,6 @@ if(!isset($login_session)){
 mysqli_close($connection); 
 header('Location: index.php'); 
 }
+
+
 ?>
